@@ -1,0 +1,35 @@
+{
+  "output": "./output",
+  "helpers": {
+    "WebDriverIO": {
+      "url": "http://sp-helix-staging.herokuapp.com",
+      "browser": "chrome",
+      "smartWait": 5000,
+      "fullPageScreenshots ": true,
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "chromeOptions": {
+          "prefs": {
+            "args": "['start-maximized']",
+            "profile.default_content_settings.popups": "0",
+            "download.default_directory": "E:/analyticsFire/git/commercial-ipa"
+          }
+        }
+      }
+    }
+  },
+  "include": {
+    "I": "./tests/steps_file.js"
+  },
+  "mocha": {
+    "reporterOptions": {
+      "reportDir": "output"
+    }
+  },
+  "bootstrap": false,
+  "teardown": null,
+  "hooks": [],
+  "tests": "./tests/testCases/*_test.js",
+  "timeout": 10000,
+  "name": "commercial-ipa"
+}

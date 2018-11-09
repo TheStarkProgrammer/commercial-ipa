@@ -1,0 +1,14 @@
+/node_modules/*
+/output/*
+/.idea/*
+package-lock.json
+/output/
+.project
+.idea/vcs.xml
+.settings/.jsdtscope
+.settings/org.eclipse.wst.jsdt.ui.superType.container
+.settings/org.eclipse.wst.jsdt.ui.superType.name
+.tern-project
+.nvmrc
+.DS_Store
+tmp/*
